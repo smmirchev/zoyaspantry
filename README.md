@@ -1,3 +1,8 @@
+# App Overview
+
+Replica of the Zoya’s homepage for training purposes, using React.js with SASS.
+Original website: https://zoyaspantry.com.au/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -1,3 +1,9 @@
+# App Overview
+
+Netlify link: https://zoyaspantry-copy.netlify.app/ <br />
+Replica of the Zoya’s homepage for training purposes, using React.js with SASS.<br />
+Original website: https://zoyaspantry.com.au/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

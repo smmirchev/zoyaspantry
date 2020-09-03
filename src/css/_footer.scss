@@ -1,0 +1,61 @@
+.app-footer {
+  background: #402661;
+  color: white;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 6em 12em 3em 12em;
+  .h1 {
+    font-size: 36px;
+    color: #ffd1cf;
+  }
+}
+// the list
+.menu-footer-container {
+  .h4 {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .small {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    li {
+      margin: 0;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.bottom {
+  height: 10vh;
+  padding: 0 12em;
+  margin: 0;
+
+  .h4 {
+    margin-bottom: 1em;
+  }
+  .h5 {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .all-rights {
+    position: relative;
+  }
+  .right {
+    float: right;
+  }
+  .bold {
+    font-size: 14px;
+    font-weight: 800;
+  }
+}

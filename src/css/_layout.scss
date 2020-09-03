@@ -1,0 +1,41 @@
+.home-content {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  //background: yellow;
+}
+.top-banner {
+  grid-column: 2/3;
+  background: rgba(176, 227, 217, 0.1);
+  padding: 4em 0;
+  grid-row: 1/2;
+}
+
+.shop-cat {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.products {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+.brands {
+  grid-column: 2/4;
+  grid-row: 4/5;
+}
+
+.why-zoyas {
+  grid-column: 2/4;
+  grid-row: 5/6;
+}
+
+.stay-in {
+  grid-column: 2/4;
+  grid-row: 6/7;
+}
+
+.app-footer {
+  grid-column: 1/4;
+  grid-row: 7/8;
+}

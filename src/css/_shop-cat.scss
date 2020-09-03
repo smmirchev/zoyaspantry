@@ -1,0 +1,64 @@
+.swiper-wrapper {
+  position: relative;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.shop-cat-header {
+  position: relative;
+  left: 2em !important;
+  .font-medium {
+    font-size: 46px;
+  }
+}
+
+.view-all-btn {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 120%;
+      opacity: 0;
+      transition: all 0.5s ease 0s;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #17aba6;
+    width: 100%;
+    height: 2px;
+  }
+}
+
+.cat-slider {
+  height: 73vh;
+  padding-top: 5em;
+}
+
+.swiper-slide {
+  max-width: 19vw;
+  position: relative;
+  right: 2em;
+  .img {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .shop-cat-header {
+    width: 300px;
+    padding: 0;
+  }
+  .h2 {
+    // margin-top: 1.5em;
+    //margin-bottom: 2em;
+    font-size: 22px;
+    font-weight: 700;
+  }
+}

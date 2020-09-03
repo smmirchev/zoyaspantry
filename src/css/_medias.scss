@@ -1,0 +1,81 @@
+@media only screen and (max-width: 1500px) {
+  .app-header {
+    padding: 2em 0;
+  }
+  .header-logo {
+    margin-left: 2.5em;
+    img {
+      max-width: 80%;
+    }
+  }
+  .account-info {
+    margin-right: 1.5em;
+  }
+
+  .top-banner {
+    grid-column: 1/4;
+    margin-left: 2.5em;
+    margin-right: 4em;
+    margin-bottom: 0;
+  }
+  .info-cont-wrapper {
+    margin-left: 2em;
+  }
+
+  .shop-cat {
+    grid-column: 1/4;
+    margin-left: 2.5em;
+    margin-top: 0;
+  }
+
+  .shop-cat-header {
+    .font-medium {
+      font-size: 36px;
+    }
+  }
+
+  .products-wrapper {
+    .h1 {
+      font-size: 36px;
+    }
+  }
+
+  .brands-title {
+    .h1 {
+      font-size: 36px;
+    }
+  }
+  .why-zoyas {
+    margin-top: 2.5em;
+    .h1 {
+      font-size: 36px;
+    }
+  }
+
+  .stay-in {
+    margin-right: 5em;
+    .h1 {
+      font-size: 36px;
+    }
+  }
+  .stay-in-title {
+    width: 30vw;
+  }
+
+  .widget-area {
+    width: 45vw;
+    position: relative;
+  }
+
+  .top {
+    padding: 6em 6em 3em 6em;
+  }
+
+  .bottom {
+    padding: 0 6em;
+  }
+
+  .products-cont-title {
+    margin-right: 0em;
+  }
+}

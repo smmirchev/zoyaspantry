@@ -1,0 +1,88 @@
+.products {
+  padding-top: 12em;
+  position: relative;
+}
+
+.products-wrapper {
+  position: relative;
+  .h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin: 0;
+  }
+}
+
+.titles {
+  padding-bottom: 5em;
+  position: relative;
+}
+// the container
+.products-cont {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+// first container item
+.products-cont-title {
+  margin-top: 10em;
+  margin-right: 4em;
+  width: 400px;
+  .h1 {
+    margin-bottom: 0.5em;
+  }
+}
+// second container item - also a container
+.category-products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+// the container items for the above container - category-products
+.type-product {
+  margin-right: 2em;
+  margin-bottom: 2em;
+  position: relative;
+  max-width: 19vw;
+  background: #ffffff;
+
+  .type-product-heart {
+    color: #402661;
+    position: absolute;
+    left: 85%;
+    top: 3%;
+  }
+
+  .type-product-image {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .type-product-info {
+    margin-left: 0.6em;
+  }
+  .type-product-info-p {
+    font-size: 12px;
+    margin-bottom: 0.4em;
+  }
+  .type-product-info-h5 {
+    margin-top: 0;
+    font-size: 16px;
+  }
+
+  .type-product-price {
+    margin-left: 0.6em;
+    float: left;
+  }
+  .type-product-button {
+    margin-right: 0.6em;
+    margin-bottom: 0.9em;
+    float: right;
+    padding: 0.5em 1.3em;
+    z-index: 1;
+  }
+}

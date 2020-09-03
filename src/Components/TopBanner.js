@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 
 class TopBanner extends Component {
-  constructor() {
-    super();
-    this.state = {
-      searchValue: "Batman",
-    };
-  }
   render() {
     return (
       <div className="top-banner-wrapper">

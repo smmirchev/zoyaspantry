@@ -5,12 +5,6 @@ import { FaSearch, FaRegSmile, FaRegHeart, FaAngleDown } from "react-icons/fa";
 import Home from "./Home";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      searchValue: "Batman",
-    };
-  }
   render() {
     return (
       <div className="app">

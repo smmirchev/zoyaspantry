@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 
 class WhyZoyas extends Component {
-  constructor() {
-    super();
-    this.state = {
-      searchValue: "Batman",
-    };
-  }
   render() {
     return (
       <div className="why-zoyas">

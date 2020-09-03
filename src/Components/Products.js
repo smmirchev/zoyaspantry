@@ -2,12 +2,6 @@ import React, { Component } from "react";
 import { FaRegHeart } from "react-icons/fa";
 
 class Products extends Component {
-  constructor() {
-    super();
-    this.state = {
-      searchValue: "Batman",
-    };
-  }
   render() {
     return (
       <div className="products-wrapper">

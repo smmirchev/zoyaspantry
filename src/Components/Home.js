@@ -8,12 +8,6 @@ import Brands from "./Brands";
 import WhyZoyas from "./WhyZoyas";
 
 class Home extends Component {
-  constructor() {
-    super();
-    this.state = {
-      searchValue: "Batman",
-    };
-  }
   render() {
     return (
       <div className="home-content">

@@ -8,13 +8,6 @@ import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 
 class ShopCat extends Component {
-  constructor() {
-    super();
-    this.state = {
-      searchValue: "Batman",
-    };
-  }
-
   render() {
     return (
       <div className="shop-cat-wrapper">

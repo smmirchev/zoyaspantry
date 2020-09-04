@@ -1,15 +1,76 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import { FaSearch, FaRegSmile, FaRegHeart, FaAngleDown } from "react-icons/fa";
+import {
+  FaSearch,
+  FaRegSmile,
+  FaRegHeart,
+  FaAngleDown,
+  FaBars,
+} from "react-icons/fa";
 
 import Home from "./Home";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = { responsiveActive: false };
+
+    this.toggleClass = this.toggleClass.bind(this);
+  }
+  toggleClass() {
+    const currentState = this.state.active;
+    this.setState({ active: !currentState });
+  }
+
   render() {
     return (
       <div className="app">
         <Router>
           <header className="app-header">
+            <button
+              className={
+                this.state.active
+                  ? "responsive-active responsive-btn"
+                  : "responsive-btn"
+              }
+              onClick={this.toggleClass}
+            >
+              <FaBars size={28} />
+            </button>
+            <div className={this.state.active ? "responsive-active" : "none"}>
+              <ul className="responsive-menu">
+                <li>
+                  <Link className="h4 font-medium green" to="NewIn">
+                    New in
+                  </Link>
+                </li>
+                <li>
+                  <Link className="h4 font-medium green" to="BestSellers">
+                    Best sellers
+                  </Link>
+                </li>
+                <li>
+                  <Link className="h4 font-medium" to="Pantry">
+                    Pantry
+                  </Link>
+                </li>
+                <li>
+                  <Link className="h4 font-medium purple" to="WholeFoods">
+                    Whole Foods
+                  </Link>
+                </li>
+                <li className="h4 font-medium">
+                  <Link to="Login">
+                    Login <FaRegSmile size={26} className="icons" />
+                  </Link>
+                </li>
+                <li className="h4 font-medium">
+                  <Link to="Favourites">
+                    Favourites <FaRegHeart size={26} className="icons" />
+                  </Link>
+                </li>
+              </ul>
+            </div>
             <div className="header-logo">
               <Link to="/">
                 <img src="logo.svg" alt="logo" />
@@ -161,12 +222,12 @@ class App extends Component {
               <div>
                 <FaSearch size={26} />
               </div>
-              <div>
+              <div className="login">
                 <Link to="Login">
                   <FaRegSmile size={26} />
                 </Link>
               </div>
-              <div>
+              <div className="favourites">
                 <Link to="Favourites">
                   <FaRegHeart size={26} />
                 </Link>
@@ -180,7 +241,11 @@ class App extends Component {
               </div>
             </div>
           </header>
-          <main className="app-content">
+          <main
+            className={
+              this.state.active ? "responsive-hide app-content" : "app-content"
+            }
+          >
             <Switch>
               <Route exact path="/">
                 <Home />
@@ -208,7 +273,11 @@ class App extends Component {
               </Route>
             </Switch>
           </main>
-          <footer className="app-footer">
+          <footer
+            className={
+              this.state.active ? "responsive-hide app-footer" : "app-footer"
+            }
+          >
             <div className="top">
               <div className="item">
                 <h1 className="h1 font-medium">Store</h1>

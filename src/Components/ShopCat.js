@@ -13,7 +13,7 @@ class ShopCat extends Component {
       <div className="shop-cat-wrapper">
         <div className="cat-slider">
           <div className="swiper-wrapper grab">
-            <Swiper spaceBetween={50} slidesPerView={3}>
+            <Swiper spaceBetween={50} slidesPerView={2}>
               <SwiperSlide>
                 <div className="shop-cat-header swiper-slide">
                   <h2 className="h1 font-medium shop-by">
